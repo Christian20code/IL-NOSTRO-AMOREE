@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>Per te, amore mio ❤️</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #74394f;
+      background: #fff5f7;
+      text-align: center;
+    }
+
+    header {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 35px 20px;
+      background: linear-gradient(145deg, #ffe0eb, #fff5f7, #ffd6e5);
+      position: relative;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: clamp(2.7rem, 9vw, 5rem);
+      margin: 15px 0;
+      color: #c04470;
+    }
+
+    h2 {
+      color: #c04470;
+      font-size: 2rem;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 1.08rem;
+    }
+
+    .subtitle {
+      max-width: 500px;
+      margin: 0 auto 25px;
+    }
+
+    .heart {
+      font-size: 3rem;
+      animation: beat 1.5s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+    }
+
+    .button {
+      display: inline-block;
+      background: #c04470;
+      color: white;
+      text-decoration: none;
+      padding: 14px 25px;
+      border-radius: 30px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      font-family: inherit;
+      margin: 8px;
+    }
+
+    section {
+      padding: 65px 20px;
+      max-width: 950px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 22px;
+      padding: 25px;
+      box-shadow: 0 8px 30px #c0447012;
+      margin: 20px auto;
+      max-width: 700px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .photo {
+      background: white;
+      padding: 10px 10px 22px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px #74394f15;
+      transform: rotate(-1deg);
+    }
+
+    .photo:nth-child(even) {
+      transform: rotate(1deg);
+    }
+
+    .photo img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 6px;
+      background: #ffe5ed;
+    }
+
+    .caption {
+      font-size: 0.95rem;
+      margin: 12px 0 0;
+    }
+
+    .letter {
+      text-align: left;
+      white-space: pre-line;
+      line-height: 2;
+    }
+
+    .reasons {
+      list-style: none;
+      padding: 0;
+    }
+
+    .reasons li {
+      background: #fff;
+      margin: 12px 0;
+      padding: 16px;
+      border-radius: 14px;
+      text-align: left;
+    }
+
+    .music {
+      background: linear-gradient(135deg, #ffe0eb, #fff);
+      padding: 30px 20px;
+      border-radius: 22px;
+    }
+
+    footer {
+      background: #ffe0eb;
+      padding: 30px 15px;
+    }
+
+    .small {
+      font-size: 0.9rem;
+    }
+
+    #surprise {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #c04470;
+    }
+
+    .floating {
+      position: absolute;
+      bottom: -30px;
+      animation: floatUp 8s linear infinite;
+      opacity: 0.55;
+      pointer-events: none;
+    }
+
+    @keyframes floatUp {
+      from { transform: translateY(0); opacity: 0; }
+      20% { opacity: 0.55; }
+      to { transform: translateY(-100vh); opacity: 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="inizio">
+    <div class="heart">❤️</div>
+    <p>Un piccolo posto dedicato a te</p>
+    <h1>Per te, amore mio</h1>
+    <p class="subtitle">
+      Tra tutte le persone del mondo, sono felice
+      che la vita abbia fatto incontrare proprio noi.
+      Questo piccolo sito è tutto per te. 💗
+    </p>
+    <a class="button" href="#lettera">Apri la tua sorpresa 💌</a>
+    <span class="floating" style="left: 12%; animation-delay: 0s">💕</span>
+    <span class="floating" style="left: 40%; animation-delay: 3s">♡</span>
+    <span class="floating" style="left: 75%; animation-delay: 1s">💗</span>
+  </header>
+
+  <section id="ricordi">
+    <h2>📸 I nostri ricordi</h2>
+    <p>Ogni foto racconta un pezzetto della nostra storia.</p>
+
+    <div class="gallery">
+      <div class="photo">
+        <img src="foto1.jpg" alt="Un nostro ricordo speciale">
+        <p class="caption">Uno dei miei momenti preferiti ❤️</p>
+      </div>
+
+      <div class="photo">
+        <img src="foto2.jpg" alt="Un altro nostro ricordo">
+        <p class="caption">Tu ed io, semplicemente noi 💗</p>
+      </div>
+
+      <div class="photo">
+        <img src="foto3.jpg" alt="Un momento insieme">
+        <p class="caption">Un ricordo che porterò con me 🫶</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="lettera">
+    <h2>💌 Una lettera per te</h2>
+
+    <div class="card letter">Amore mio,
+
+da quando fai parte della mia vita, ci sono momenti
+che hanno un significato ancora più speciale.
+
+Voglio che tu sappia quanto sei importante per me.
+Amo il tempo che passiamo insieme, i nostri sorrisi,
+le nostre risate e anche tutte quelle piccole cose
+che forse sembrano normali, ma che con te diventano
+ricordi preziosi.
+
+Non servono regali enormi per dimostrare quello
+che provo. A volte basta fermarsi un momento e
+ricordarsi quanto sia bello avere accanto una persona
+speciale come te.
+
+Ho creato questo piccolo spazio perché tu possa
+tornare qui ogni volta che vuoi e ricordarti che
+c'è qualcuno che ti vuole un mondo di bene.
+
+Il 14 ottobre è una data speciale per noi,
+e volevo custodirla anche qui. ❤️
+
+Grazie per essere te stessa, amore mio.
+Spero di aggiungere ancora tantissime foto,
+risate e ricordi alle nostre pagine.
+
+    <strong>Con tutto il mio cuore,
+    [SCRIVI QUI IL TUO NOME] ❤️</strong></div>
+  </section>
+
+  <section id="motivi">
+    <h2>🫶 Le cose che amo di te</h2>
+    <p>Potrei scriverne mille, ma ecco alcune delle mie preferite.</p>
+
+    <ul class="reasons">
+      <li>❤️ Il tuo sorriso e il modo in cui riesci a rendermi felice.</li>
+      <li>💗 Il tuo modo di essere, unico e speciale.</li>
+      <li>🥹 I momenti in cui ridiamo insieme per niente.</li>
+      <li>🫶 Il modo in cui riesci a rendere belli anche i giorni normali.</li>
+      <li>💌 Tutte le piccole cose che ti rendono proprio te.</li>
+      <li>💕 Il fatto che, tra tante persone, sei tu quella che voglio accanto.</li>
+    </ul>
+    <p>Queste sono solo alcune delle mille ragioni per cui sei speciale. 💖</p>
+  </section>
+
+  <section id="canzone">
+    <div class="music">
+      <h2>🎵 La nostra canzone</h2>
+      <p><strong>L'emozione non ha voce</strong></p>
+      <p>Ci sono emozioni che a volte le parole non riescono a spiegare.</p>
+      <a class="button"
+         href="https://www.youtube.com/results?search_query=L%27emozione+non+ha+voce+Adriano+Celentano"
+         target="_blank"
+         rel="noopener noreferrer">
+        Ascoltiamola insieme 🎶
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="card">
+      <h2>💝 Un'ultima sorpresa</h2>
+      <p>Amore mio, c'è ancora una cosa che voglio dirti...</p>
+      <button class="button" onclick="showSurprise()">
+        Premi qui ❤️
+      </button>
+      <div id="surprise">
+        Se potessi scegliere ancora,
+        tra mille strade sceglierei quella
+        che mi porta a te. Ti voglio bene, amore mio. 💗
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Fatto con amore, per te. ❤️</p>
+    <p>14 ottobre 💌</p>
+    <p class="small">La nostra storia è il mio ricordo preferito.</p>
+  </footer>
+
+  <script>
+    function showSurprise() {
+      document.getElementById("surprise").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
